@@ -334,11 +334,19 @@ body {
 
 @media (max-width: 768px) {
   .popup-container {
-    top: 40%;
-    left: 50%;
+    top: 50%; /* Coloca o popup no meio da tela */
+    left: 50%; /* Coloca o popup no meio da tela */
+    transform: translate(-50%, -50%); /* Centraliza o popup no celular também */
+    width: 80%; /* Reduz a largura do popup no celular */
+    height: auto; /* Ajusta a altura para o conteúdo */
+  }
+
+  .popup {
+    padding: 15px; /* Ajusta o padding no celular */
   }
 
   .message {
-    font-size: 18px;
+    font-size: 18px; /* Reduz o tamanho da fonte da mensagem no celular */
   }
 }
+
